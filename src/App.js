@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+import { useSelector } from 'react-redux';
 import './App.css';
+import Contact from './components/contactForm/Contact';
+import Footer from './components/footer/Footer';
+import Header from './components/header/Header';
+import { initialState, myteam } from './features/headerToggler/headerPart';
+import rootReducer from './features/rootReducer';
+import { useEffect } from 'react';
+import MyTeam from './components/myTeam/parts/talent/MyTeam';
+
 
 function App() {
+
+  
+  const infoA=useSelector((state)=>state.header.header.value)
+ 
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className="App">
+    
+      <Header />
+      <MyTeam/>
+      <Contact />
+      <Footer />
+    </section>
   );
 }
 
