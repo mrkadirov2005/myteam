@@ -5,7 +5,7 @@ width: 100%;
 height: 200px;
 background-color: #F67E7E;
 display: flex;
-align-items: flex-end;
+align-items: flex-end; 
 
 `
 export const IMG=styled.img` 
@@ -26,5 +26,9 @@ export const HEADING=styled.h1`
 display: flex;
 color: #012F34;
 font-size: 48px;
+@media screen and (max-width:800px) {
+    margin-left: -50px;
+    font-size: 32px;
+}
 
 `

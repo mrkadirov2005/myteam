@@ -3,7 +3,7 @@ import './footer.css'
 import instagram from '../img/Path.svg'
 import facebook from '../img/Path (1).svg'
 import twitter from '../img/Path (2).svg'
-
+ 
 
 function Footer() {
   return (

@@ -1,4 +1,13 @@
 html{
-    width: 1520px;
+    width: 1519px;
     height: auto;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 800px) {
+    html{
+    max-width: 768px;
+    width: 100%;
+    }
 }

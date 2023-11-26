@@ -6,21 +6,26 @@ import Header from './components/header/Header';
 import { initialState, myteam } from './features/headerToggler/headerPart';
 import rootReducer from './features/rootReducer';
 import { useEffect } from 'react';
-import MyTeam from './components/myTeam/parts/talent/MyTeam';
-
+import Index from './components/myTeam/Container/Index';
+import Aboutindex from './components/about/Container/Aboutindex';
+import ContactsContainer from './components/contactPart/container/ContactsContainer';
+import ContentPart from './content';
 
 function App() {
-
   
-  const infoA=useSelector((state)=>state.header.header.value)
  
+  
 
   return (
     <section className="App">
-    
+
       <Header />
-      <MyTeam/>
-      <Contact />
+      <ContentPart/>
+      {/* <MiddlePart/> */}
+      {/* <Index/>
+      <Aboutindex/>
+      <ContactsContainer/>
+      <Contact /> */}
       <Footer />
     </section>
   );

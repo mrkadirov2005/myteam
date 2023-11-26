@@ -1,0 +1,92 @@
+ *{
+    margin: 0;
+    padding: 0;
+ }
+ .directors_container{
+    width: 100%;
+    position: relative;
+    background-color: #004047;
+    padding: 100px 0;
+    padding-bottom: 170px;
+ }
+ .directors_page_container{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-direction: column;
+   width: 70%;
+   margin-left: auto;
+   margin-right: auto;
+ }
+ .directors_top_image{
+    position: absolute;
+    top: 0;
+    left:0;
+
+ }
+ .directors_card_heading{
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    padding-top: 100px;
+    margin-bottom: 25px;
+ }
+ .cards_wrapper{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+  
+ }
+ 
+.card_of_directors{
+   position: relative;
+background-color:#012F34 ;
+width: 31%;
+padding: 25px 0;
+color: white;
+margin-top: 50px;
+padding-bottom: 80px;
+
+}
+.director_name{
+   color:#79C8C7;
+   margin: 15px 0;
+}
+.social_media_icons{
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 18%;
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: 10px;
+
+}
+.plus_button{
+   background-color: #F67E7E;
+   width: 56px;
+   height: 56px;
+   border-radius: 50%;
+   font-size: 40px;
+   color: black;
+   font-weight: 700;
+   position: absolute;
+   bottom: -25px;
+   left: 45%;
+   
+}
+.extra{
+   padding:70px 0;
+}
+.bottom_img_of_directors{
+   position: absolute;
+   right: 0;
+   bottom: 0;
+}
+@media screen  and (max-width:800px) {
+   .card_of_directors{
+      width: 209px;
+      height: 220px;
+   }
+}

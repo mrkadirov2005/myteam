@@ -1,25 +1,25 @@
 import { createSlice } from '@reduxjs/toolkit'
+import Index from '../../components/myTeam/Container/Index'
+import Aboutindex from '../../components/about/Container/Aboutindex'
+import ContactsContainer from '../../components/contactPart/container/ContactsContainer'
 
 export const initialState = {
-  value: 'myteam',
+  value: <Index/>,
 }
 //TODO rename this folder as reducers
 export const headerReducer = createSlice({
   name: 'Update_header_part',
   initialState,
   reducers: {
-    about:(state)=>{
-      state.value="about";
+    myteam:(state)=>{
+      state.value=<Index/> 
 
     },
-    myteam:(state)=>{
-      state.value='myteam'
-    },
-    home:(state)=>{
-      state.value="home"
+     about:(state)=>{
+      state.value=<Aboutindex/>
     },
     contact:(state)=>{
-      state.value='contact'
+      state.value=<ContactsContainer/>
     }
 
   },

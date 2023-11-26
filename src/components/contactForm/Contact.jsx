@@ -6,10 +6,6 @@ import { IMG, WRAPPER,TEXTS,HEADING} from './styles'
 
 
 
-
-
- 
-
 function Contact() {
   return (
     <WRAPPER>
